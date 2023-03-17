@@ -6,20 +6,16 @@
 body {
   margin-top: 40px;
   font-family: Helvetica, sans-serif;
+  overflow: hidden;
 }
 
-body:before {
-  position: fixed;
-  top: 0;
-  left: 0;
+img {
+  position: absolute;
+  z-index: -4;
   width: 100vw;
-  height: 100vh;
-  content: "";
-  opacity: 0.04;
-  z-index: 1000000;
-  pointer-events: none;
-  background-image: url(./grit.jpg);
-  filter: brightness(100%) blur(0px);
+  height: 120vh;
+  margin-top: -50px;
+  opacity: 0.05;
 }
 
 #canvas {
